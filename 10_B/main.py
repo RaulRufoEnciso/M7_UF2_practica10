@@ -12,37 +12,41 @@ print(dm2.getDensityM2())
 print("----------------------")
 print(dkm2.getDensityKM2())
 def Population():
-    gPP = pp.getAllPopulation()
+    gPP = pp.getAllPopulation().replace({",":""},regex=True)
+
 
     X = list(gPP.iloc[:, 1])
     Y = list(gPP.iloc[:, 0])
 
     plt.pie(X, labels=Y, autopct="%0.1f %%")
     plt.axis("equal")
+    plt.legend()
     plt.show()
 
 Population()
 
 def DensityKM2():
-    gDKM2 = dm2.getDensityM2()
+    gDKM2 = dm2.getDensityM2().replace({",":""},regex=True)
 
-    X = list(gDKM2.iloc[:, 0])
-    Y = list(gDKM2.iloc[:, 1])
+    X = list(gDKM2.iloc[:, 1])
+    Y = list(gDKM2.iloc[:, 0])
 
     plt.pie(X, labels=Y, autopct="%0.1f %%")
     plt.axis("equal")
+    plt.legend()
     plt.show()
 
 DensityKM2()
 
 def DensityM2():
-    gDM2 = dkm2.getDensityKM2()
+    gDM2 = dkm2.getDensityKM2().replace({",":""},regex=True)
 
-    X = list(gDM2.iloc[:, 0])
-    Y = list(gDM2.iloc[:, 1])
+    X = list(gDM2.iloc[:, 1])
+    Y = list(gDM2.iloc[:, 0])
 
     plt.pie(X, labels=Y, autopct="%0.1f %%")
     plt.axis("equal")
+    plt.legend()
     plt.show()
 
 DensityM2()
