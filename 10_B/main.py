@@ -20,7 +20,8 @@ def Population():
 
     plt.pie(X, labels=Y, autopct="%0.1f %%")
     plt.axis("equal")
-    plt.legend()
+    # plt.legend()
+    plt.title("Población")
     plt.show()
 
 Population()
@@ -33,7 +34,8 @@ def DensityKM2():
 
     plt.pie(X, labels=Y, autopct="%0.1f %%")
     plt.axis("equal")
-    plt.legend()
+    # plt.legend()
+    plt.title("Densisdad por KM2")
     plt.show()
 
 DensityKM2()
@@ -46,7 +48,8 @@ def DensityM2():
 
     plt.pie(X, labels=Y, autopct="%0.1f %%")
     plt.axis("equal")
-    plt.legend()
+    plt.title("Densidad por M2")
+    # plt.legend()
     plt.show()
 
 DensityM2()

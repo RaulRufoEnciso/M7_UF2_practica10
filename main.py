@@ -21,6 +21,7 @@ def MP():
     plt.title("MegaPixeles")
     plt.xlabel("Id Megapixeles")
     plt.ylabel("Megapixeles")
+    plt.legend()
     plt.show()
 
 MP()
@@ -35,6 +36,7 @@ def BP():
     plt.title("Battery_Powder")
     plt.xlabel("Id Battery Powder")
     plt.ylabel("Battery Powder")
+    plt.legend()
     plt.show()
 
 BP()
@@ -49,6 +51,7 @@ def CS():
     plt.title("Clock_Speed")
     plt.xlabel("Id Clock_Speed")
     plt.ylabel("Clock_Speed")
+    plt.legend()
     plt.show()
 
 CS()
